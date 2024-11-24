@@ -1,0 +1,19 @@
+{
+  "name": "spotify",
+  "version": "1.0.0",
+  "description": "this is a spotify clone app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "spotify",
+    "music"
+  ],
+  "author": "ayanokoji",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

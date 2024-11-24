@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">click me</button>
+    <audio id="main-audio" src="" controls></audio>
+    <script>
+
+        const getMusic = async () => {
+            let response = await fetch("http://localhost:5000/api");
+            let data = await response.json()
+            return data;
+        }
+
+        const main = async () => {
+            let data = await getMusic();
+            console.log(data.songs)
+            let songs = data.songs[100]
+            document.querySelector("#main-audio").src = songs
+        }
+
+        document.querySelector("#btn").addEventListener("click", () => {
+            main();
+        }
+        )
+
+    </script>
+</body>
+</html>
