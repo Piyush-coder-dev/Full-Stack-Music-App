@@ -11,6 +11,7 @@ spotify> npm i
 spotify> cd Backend
 spotify/Backend> npm init -y
 spotify/Backend> npm i express@latest
+spotify/Backend> npm i cors
 spotify/Backend> npm i --global nodemon
 spotify/Backend> nodemon ./server.js
 ```
