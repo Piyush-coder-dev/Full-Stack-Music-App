@@ -1,8 +1,27 @@
-# React + Vite
+# Open spotify folder in Vs Code
+## 1. Please run these command lines in cmd before starting servers:
+## 2. command lines for root (spotify) folder:
+```cmd
+spotify> npm i
+```
+* It will download all the necessary modules;
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 3. command lines for Backend folder which is inside root (spotify) folder:
+```cmd
+spotify> cd Backend
+spotify/Backend> npm init -y
+spotify/Backend> npm i express@latest
+spotify/Backend> npm i --global nodemon
+spotify/Backend> nodemon ./server.js
+```
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 4. starting servers:
+- for Root folder
+```cmd
+spotify> npm run dev
+```
+- for Backend folder
+```cmd
+spotify> cd Backend
+spotify/Backend> nodemon ./server.js
+```
